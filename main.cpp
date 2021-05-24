@@ -2,6 +2,7 @@
 #include <string>
 #include <fstream>
 #include <cstdlib>
+#include <chrono>
 
 #include "create_data.cpp"
 #include "binary_search.cpp"
@@ -18,5 +19,7 @@ int main(int argc, char const *argv[])
 
 	int x = busquedaBinaria(24, filename, 0, N-1);
 	cout << x << endl;
+
+	//usar time_since_epoch para tomar el tiempo que demora cada cosa
 	return 0;
 }
